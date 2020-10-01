@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript Arrays #1</p>
+
+<script>
+document.write('[');
+
+var a = [1, 2, 3, 4, 5];
+
+for(var x=0; x < a.length; x++){
+var y = a[x] * 2;
+
+if(x==a.length-1){
+	document.write(y + ']');
+    }else
+    	document.write(y + ',');
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript Arrays #2</p>
+
+<script>
+function loop(character){
+var colors = ["Red", "Green", "White", "Black"];
+var output = ''; 
+for(var x=0; x < colors.length; x++){
+	if(x==colors.length-1){
+    	output = output + colors[x] + "'";
+        }else{
+			output = output + colors[x] + character;
+       }
+}
+
+return output;
+}
+
+document.write("'" + loop(' '));
+document.write("<br>'" + loop('+'));
+document.write("<br>'" + loop(','));
+</script>
+
+</body>
+</html>

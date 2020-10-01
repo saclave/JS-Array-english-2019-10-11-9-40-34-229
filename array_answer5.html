@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>JavaScript Arrays #4</p>
+
+<script>
+var arr=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+var ctr=0, maxCount=0;
+var result='';
+var x='', y='';
+
+for (x=0; x<arr.length; x++) 
+{
+	for (y=x; y<arr.length; y++)
+    {
+    	if (arr[x] == arr[y]){
+        	ctr++;  
+            }
+        if (maxCount<ctr){
+        	maxCount=ctr;
+            result = arr[x];
+        }
+    }
+    
+    ctr=0;  
+}
+
+document.write(result);
+</script>
+
+</body>
+</html>
